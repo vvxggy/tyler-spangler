@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    background-color: #1A1A1A;
+}
+
+header {
+    font-weight: 400;
+    background-color: #343a40; /* Se repite, por lo que se ha unido */
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 55px;
+    text-align: left;
+}
+
+h1 > span {
+    color: lightcoral;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: lightcoral;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: lightcoral;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h5 {
+    font-size: 20px;
+    color: #7e7e7e; /* Se repite font-weight */
+}
+
+h6 {
+    color: white;
+    font-family: Raleway;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 14px;
+    font-family: Raleway;
+    color: white;
+    font-weight: 300;
+    text-align: left;
+}
+
+p > span {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.arkenea {
+    background-image: url(../images/about-me.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .arkenea {
+        height: 135vh;
+  }
+}
+
+.our {
+    height: 100vh;
+}
+
+.success {
+    color: #7e7e7e;
+    font-size: 15px;
+    font-weight: 300;
+    width: 85%;
+}
+
+.continue {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.continue:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.address {
+    font-size: 20px;
+    color: #7e7e7e;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 10;
+    padding-top: 10%;
+    padding-bottom: 4%;
+    color: #fff;
+    text-align: center;
+}
+
+.margin-portada {
+    margin-top: 48px;
+}
+
+.flex {
+    display: flex;
+}
+
+a:hover,
+a i:hover { /* Combinando para reducir la duplicación */
+    transition: all 0.9s;
+    font-weight: bolder;
+    color: white;
+}
+
+.saturate:hover {
+    -webkit-filter: saturate(3);
+    filter: saturate(2);
+    transition: 0.9s;
+}
+
+.imagenes:hover {
+    position: relative;
+    transition: all 0.5s;
+    -webkit-filter: blur(2px);
+    filter: blur(2px); /* "ebkit" cambiado a "filter" */
+}
+
+.shadow:hover {
+    -webkit-filter: drop-shadow(8px 8px 10px pink);
+    filter: drop-shadow(8px 8px 10px pink);
+    transition: 0.5s;
+}
+
+.espacio {
+    padding-top: -50px; /* Parece un valor incorrecto */
+}
+
+.punto,
+.punto2 {
+    color: white; /* punto2: "lightcoral:" corregido a "lightcoral" */
+}
+
+.mar-text {
+    margin-top: 145px;
+}
+
+.btn {
+    border-radius: 30px;
+    border: 0px;
+}
+
+.gal-sec {
+    margin-bottom: 130px;
+}
