@@ -1,182 +1,292 @@
+@charset "UTF-8";
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Amaranth', sans-serif;
-    background-color: #1A1A1A;
+  font-family: "Amaranth", sans-serif;
+  background-color: #1A1A1A;
 }
 
 header {
-    font-weight: 400;
-    background-color: #343a40; /* Se repite, por lo que se ha unido */
+  font-weight: 400;
+  background-color: #000000; /* Se repite, por lo que se ha unido */
+  height: 13vh;
 }
 
 footer {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 h1 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 55px;
-    text-align: left;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: left;
 }
 
 h1 > span {
-    color: lightcoral;
+  color: lightcoral;
 }
 
 h2 {
-    font-size: 42px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: lightcoral;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: lightcoral;
 }
 
 h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: lightcoral;
+  font-size: 24px;
+  font-weight: 600;
+  color: lightcoral;
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 30px;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h5 {
-    font-size: 20px;
-    color: #7e7e7e; /* Se repite font-weight */
+  font-size: 20px;
+  color: #7e7e7e; /* Se repite font-weight */
 }
 
 h6 {
-    color: white;
-    font-family: Raleway;
-    padding-top: 10px;
+  color: white;
+  font-family: Raleway;
+  padding-top: 10px;
 }
 
 p {
-    font-size: 14px;
-    font-family: Raleway;
-    color: white;
-    font-weight: 300;
-    text-align: left;
+  font-size: 14px;
+  font-family: Raleway;
+  color: white;
+  font-weight: 300;
+  text-align: left;
 }
 
 p > span {
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .arkenea {
-    background-image: url(../images/about-me.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
+  background-image: url(../images/about-me.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 600px) {
-    .arkenea {
-        height: 135vh;
+  .arkenea {
+    height: 135vh;
   }
 }
-
 .our {
-    height: 100vh;
+  height: 100vh;
 }
 
 .success {
-    color: #7e7e7e;
-    font-size: 15px;
-    font-weight: 300;
-    width: 85%;
+  color: #7e7e7e;
+  font-size: 15px;
+  font-weight: 300;
+  width: 85%;
 }
 
 .continue {
-    text-decoration: none;
-    color: black;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .continue:hover {
-    color: red;
-    text-decoration: none;
+  color: red;
+  text-decoration: none;
 }
 
 .address {
-    font-size: 20px;
-    color: #7e7e7e;
+  font-size: 20px;
+  color: #7e7e7e;
 }
 
 .carousel-caption {
-    position: absolute;
-    z-index: 10;
-    padding-top: 10%;
-    padding-bottom: 4%;
-    color: #fff;
-    text-align: center;
+  position: absolute;
+  z-index: 10;
+  padding-top: 10%;
+  padding-bottom: 4%;
+  color: #fff;
+  text-align: center;
 }
 
 .margin-portada {
-    margin-top: 48px;
+  margin-top: 48px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 a:hover,
 a i:hover { /* Combinando para reducir la duplicación */
-    transition: all 0.9s;
-    font-weight: bolder;
-    color: white;
+  transition: all 0.9s;
+  font-weight: bolder;
+  color: white;
 }
 
-.saturate:hover {
+/* .saturate:hover {
     -webkit-filter: saturate(3);
     filter: saturate(2);
     transition: 0.9s;
-}
-
+} */
 .imagenes:hover {
-    position: relative;
-    transition: all 0.5s;
-    -webkit-filter: blur(2px);
-    filter: blur(2px); /* "ebkit" cambiado a "filter" */
+  position: relative;
+  transition: all 0.5s;
+  filter: blur(2px);
 }
 
 .shadow:hover {
-    -webkit-filter: drop-shadow(8px 8px 10px pink);
-    filter: drop-shadow(8px 8px 10px pink);
-    transition: 0.5s;
+  filter: drop-shadow(8px 8px 10px pink);
+  transition: 0.5s;
 }
 
 .espacio {
-    padding-top: -50px; /* Parece un valor incorrecto */
+  padding-top: -50px; /* Parece un valor incorrecto */
 }
 
 .punto,
 .punto2 {
-    color: white; /* punto2: "lightcoral:" corregido a "lightcoral" */
+  color: white; /* punto2: "lightcoral:" corregido a "lightcoral" */
 }
 
 .mar-text {
-    margin-top: 145px;
+  margin-top: 145px;
 }
 
 .btn {
-    border-radius: 30px;
-    border: 0px;
+  border-radius: 30px;
+  border: 0px;
 }
 
 .gal-sec {
-    margin-bottom: 130px;
+  margin-bottom: 130px;
+}
+
+/* Nuevo estilo */
+.altura-footer {
+  height: 30vh;
+}
+
+.text-footer {
+  font-size: 60%;
+}
+
+.borde-tarjetas-tienda:hover {
+  cursor: pointer;
+}
+
+.back-nav {
+  background-color: black;
+}
+
+.altura-newsletter {
+  height: 50vh;
+}
+
+.anchura-form {
+  width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .anchura-form {
+    width: 80%;
+  }
+}
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-item.next, .carousel-item.prev {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1A; /* Background color of preloader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of everything else */
+  opacity: 1;
+  animation: fadeOut 1s forwards 1s; /* Delay 1s, then animate for 1s */
+}
+
+#preloader::before {
+  content: "";
+  border: 16px solid #C1FF32; /* Light grey */
+  border-top: 16px solid #FF84DF; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#content {
+  display: block;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s; /* Delay 1s, then animate for 1s */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
